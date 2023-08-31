@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 
 const App = () => {
   return (
@@ -16,6 +16,9 @@ const App = () => {
             <Link to={'comments'}>comments page</Link>
           </li>
         </ul>
+
+          <Outlet/>
+
       </div>
   );
 };
