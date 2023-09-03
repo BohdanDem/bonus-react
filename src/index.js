@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {App} from "./App";
+import {Provider} from "./hoc/Provider";
+import {RouterProvider} from "react-router-dom";
+import {router} from "./routing/router";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <App />
+    <Provider>
+        <RouterProvider router={router}/>
+    </Provider>
   </>
 );
 
