@@ -1,6 +1,6 @@
 import React from 'react';
-import CarForm from "../components/CarContainer/CarForm";
 import {Cars} from "../components/CarContainer/Cars";
+import {CarForm} from "../components/CarContainer/CarForm";
 
 const CarsPage = () => {
     return (

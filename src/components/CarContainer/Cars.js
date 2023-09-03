@@ -1,8 +1,9 @@
 import {useAppReducer} from "../../hooks/useAppReducer";
 import {useEffect} from "react";
+import {Car} from "./Car";
 import {carService} from "../../services/carService";
 import {carActions} from "../../reducers/carReducer";
-import {Car} from "./Car";
+
 
 const Cars = () => {
 
