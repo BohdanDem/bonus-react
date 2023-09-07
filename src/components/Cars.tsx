@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import {ICar} from "../interfaces/carInterface";
 import {carService} from "../services/carService";
 import {Car} from "./Car";
