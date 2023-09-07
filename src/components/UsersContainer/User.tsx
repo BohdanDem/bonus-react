@@ -18,7 +18,7 @@ const User: FC<IProps> = ({user}) => {
             <div>name: {name}</div>
             <div>username: {username}</div>
             <div>email: {email}</div>
-            <button onClick={()=>dispatch(userActions.setCurrent(name))}>select</button>
+            <button onClick={()=>dispatch(userActions.setCurrent(name))}>Select</button>
         </div>
     );
 };
