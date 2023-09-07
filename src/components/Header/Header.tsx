@@ -5,6 +5,8 @@ import {useAppSelector} from "../../hooks/useAppSelector";
 const Header = () => {
     const {count} = useAppSelector(state => state.count);
     const {user} = useAppSelector(state => state.users);
+    const {post} = useAppSelector(state => state.posts)
+
     return (
         <div className={css.Header}>
             <div className={css.links}>
@@ -14,7 +16,7 @@ const Header = () => {
             </div>
             <div>
                 <div>user: {user}</div>
-                <div>post</div>
+                <div>post: {post}</div>
                 <div>count: {count}</div>
             </div>
         </div>

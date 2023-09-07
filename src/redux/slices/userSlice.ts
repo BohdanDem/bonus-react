@@ -10,6 +10,7 @@ const initialState: IState = {
     users: [],
     user: null
 }
+
 const userSlice = createSlice({
     name: 'userSlice',
     initialState,
