@@ -25,7 +25,7 @@ const Login = () => {
         <form onSubmit={handleSubmit(login)}>
             <input type="text" placeholder={'username'} {...register('username')}/>
             <input type="text" placeholder={'password'} {...register('password')}/>
-            <button>login</button>
+            <button>Login</button>
             {error && <div>{error}</div>}
         </form>
     );
