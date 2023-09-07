@@ -13,7 +13,7 @@ const Car: FC<IProps> = ({car}) => {
         <div>
             <div>id: {id}</div>
             <div>brand: {brand}</div>
-            <button onClick={()=>navigate(id.toString(), {state:car})}>Details</button>
+            <button onClick={()=>navigate(id.toString(), {state:car})}>DETAILS</button>
         </div>
     );
 };
