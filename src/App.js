@@ -39,9 +39,9 @@ const App = () => {
       <div>
         <div>
           count_1: {state.count1}
-          <button onClick={() => dispatch({type: 'INC_COUNT1'})}>inc</button>
-          <button onClick={() => dispatch({type: 'DEC_COUNT1'})}>dec</button>
-          <button onClick={() => dispatch({type: 'RESET_COUNT1'})}>res</button>
+          <button onClick={() => dispatch({type: 'INC_COUNT1'})}>increment</button>
+          <button onClick={() => dispatch({type: 'DEC_COUNT1'})}>decrement</button>
+          <button onClick={() => dispatch({type: 'RESET_COUNT1'})}>reset</button>
         </div>
         <div>
           count_2: {state.count2}
