@@ -5,13 +5,13 @@ import {AxiosError} from "axios";
 
 interface IState {
     users: IUser[],
-    user: string,
+    selectedUsers: IUser[],
     error: any
 }
 
 const initialState: IState = {
     users: [],
-    user: null,
+    selectedUsers: [],
     error: null
 }
 
@@ -33,7 +33,7 @@ const userSlice = createSlice({
     initialState,
     reducers: {
         setCurrent: (state, action) => {
-            state.user = action.payload
+            state.selectedUsers = action.payload
         }
     },
     extraReducers: builder => builder
