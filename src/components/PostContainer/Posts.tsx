@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import {postService} from "../../services/postService";
 import {useAppDispatch} from "../../hooks/useAppDispatch";
 import {postActions} from "../../redux/slices/postSlice";
 import {useAppSelector} from "../../hooks/useAppSelector";
@@ -11,9 +10,7 @@ const Posts = () => {
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        postService.getAll().then(({data})=>{
-            dispatch(postActions.setAll(data))
-        })
+            dispatch(postActions.getAll())
     }, [])
 
     return (
