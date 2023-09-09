@@ -39,9 +39,11 @@ const getAll = createAsyncThunk<{ data: IPagination<ICar>, page: number, size: n
 
 const create = createAsyncThunk<void, { car: ICar }>(
     'carsSlice/create',
-    async ({car}, {rejectWithValue, dispatch}) => {
+    async ({car}, {rejectWithValue, getState, dispatch}) => {
         try {
             await carService.create(car)
+            const {cars:{currentPage, currentSize}} = getState() as RootState;
+            dispatch(getAll({page:currentPage, size:currentSize}))
         } catch (e) {
             const err = e as AxiosError
             return rejectWithValue(err.response.data)
