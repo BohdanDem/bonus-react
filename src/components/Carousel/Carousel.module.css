@@ -1,0 +1,21 @@
+.Carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: red;
+}
+
+.slide {
+    width: 900px;
+    overflow: hidden;
+
+}
